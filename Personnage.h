@@ -20,10 +20,9 @@ public:
     void setPV(int);
     int getArgent();
     void setArgent(int);
-    Personnage(std::string nom,int type,Equipement* arme,Equipement* armure,int PV);
+    Personnage(/*std::string nom,int type,Equipement* arme,Equipement* armure,int PV*/);
     Personnage(const char string[8]);
 
-protected:
     int PV;
     std::string nom;
     int Argent;

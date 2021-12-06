@@ -1,17 +1,17 @@
 //
-// Created by Martin on 05/12/2021.
+// Created by antoine on 06/12/2021.
 //
 
 #include "Rodeur.h"
-using namespace std
-
-Rodeur::Rodeur() : PV(80)
+using namespace std;
+Rodeur::Rodeur()
 {
-
+    this->PV=80;
 }
-void Rodeur::detrousser(Personnage &cible) const
+void Rodeur::detrousser(Personnage* cible) const
 {
-    moni=cible.getArgent();
-    cible.setArgent(0);
-    //TODO actualiser Argent du Rodeur Ã  Argent+moni
+    int moni=cible->getArgent();
+    cible->setArgent(0);
+    std::cout<<cible->nom<<" c'est fait détrousser"<<std::endl;
+    //TODO actualiser Argent du Rodeur à Argent+moni
 }

@@ -3,12 +3,12 @@
 //
 
 #include "Personnage.h"
-Personnage::Personnage(std::string nom, int type,Equipement* arme,Equipement* armure, int PV) {
-    this->nom = nom;
-    this->type = type;
-    this->arme=arme;
-    this->armure=armure;
-    this->PV=PV;
+Personnage::Personnage(/*std::string nom, int type,Equipement* arme,Equipement* armure, int PV*/) {
+//    this->nom = nom;
+//    this->type = type;
+//    this->arme=arme;
+//    this->armure=armure;
+//    this->PV=PV;
 }
 Personnage::Personnage(const char string[8]) {
 
@@ -26,7 +26,7 @@ int Personnage::getArgent() {
     return this->Argent;
 }
 void Personnage::recevoirDegats(int degats) {
-    this->PV -= degats
+    this->PV -= degats;
 }
 void Personnage::infligerDegats(Personnage* cible, int degats) {
     cible->recevoirDegats(degats);

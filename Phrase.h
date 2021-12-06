@@ -11,14 +11,13 @@
 class Phrase {
 private :
     int chaine;
-    std::vector<std::string> phrase;
-    std::string titre;
     int ordre;
-
     int length = 0;
 public:
+    std::string titre;
     //Méthodes
-    std::vector<int> seekInstruction();
+    std::vector<std::string> phrase;
+    std::vector<Phrase*> seekInstruction();
     void SetOrdre(int ordre);
     void AjouterMot(std::string c);
     void __repr__();

@@ -12,7 +12,7 @@ Phrase* Fichier::lireFichier() {
     std::ifstream Fichier (this->chemin, std::ios::app);
     Phrase* tv1 = new Phrase (this->chemin);
     if(Fichier.is_open()){
-        std::cout << "Fichier ouvert" <<std::endl;
+        //std::cout << "Fichier ouvert" <<std::endl;
     }
     std::string input;
     while(Fichier >> input){

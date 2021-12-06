@@ -7,6 +7,8 @@
 #include <iostream>
 #include <map>
 #include <string>
+#include "Phrase.h"
+#include "Piece.h"
 class Environnement {
 
 private:
@@ -21,11 +23,18 @@ private:
                                      {"Mage",3, }};
     Personnage* personnage;
     std::string name;
-
+    std::vector<Phrase*> contenu;
+    Piece* pieceAct;
+    Phrase* phraseAct;
 public:
+    void preparerPersonnage();
     void reprPersonnage();
-    void preparerPiece(Phrase *);
+    void preparerPieces();
+    void actionCreator(Phrase *);
     Environnement(std::string name);
+    int execAction();
+    void jouer();
+    std::vector<Piece*> pieces;
 };
 
 

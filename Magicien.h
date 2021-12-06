@@ -1,9 +1,10 @@
 //
-// Created by Martin on 05/12/2021.
+// Created by antoine on 06/12/2021.
 //
 
-#ifndef CPP_MAGICIEN_H
-#define CPP_MAGICIEN_H
+#ifndef EVALUATION_MAGICIEN_H
+#define EVALUATION_MAGICIEN_H
+
 
 #include <iostream>
 #include <string>
@@ -12,9 +13,9 @@
 class Magicien : public Personnage{
 public:
     Magicien();
-    void bouleDeFeu(Personnage &cible) const;
-    void bouleDeGlace(Personnage &cible) const;
+    int savate = 12;
+    void bouleDeFeu(Personnage* cible) const;
+    void bouleDeGlace(Personnage* cible) const;
 };
 
-
-#endif //CPP_MAGICIEN_H
+#endif //EVALUATION_MAGICIEN_H
