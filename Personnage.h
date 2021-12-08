@@ -6,24 +6,28 @@
 #define EVALUATION_PERSONNAGE_H
 #include <string>
 #include "Equipement.h"
-
+#include "Arme.h"
+#include "Armure.h"
+#include <map>
 class Personnage {
+private :
 
 public:
     void recevoirDegats(int degats);
     void infligerDegats(Personnage* cible, int degats);
-    Equipement* arme;
-    Equipement* armure;
+    Arme* arme;
+    Armure* armure;
 
-    int type;
+    std::string type;
     int getPV();
     void setPV(int);
     int getArgent();
     void setArgent(int);
-    Personnage(/*std::string nom,int type,Equipement* arme,Equipement* armure,int PV*/);
-    Personnage(const char string[8]);
-
+    void __repr__();
+    Personnage();
     int PV;
+    int PA;
+    int PD;
     std::string nom;
     int Argent;
 };

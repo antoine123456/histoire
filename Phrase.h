@@ -12,8 +12,9 @@ class Phrase {
 private :
     int chaine;
     int ordre;
-    int length = 0;
+
 public:
+    int length = 0;
     std::string titre;
     //Méthodes
     std::vector<std::string> phrase;
@@ -26,6 +27,7 @@ public:
     std::string GetTitre();
     // Constructeur
     Phrase(std::string phrase);
+    ~Phrase();
 };
 
 

@@ -18,6 +18,7 @@ public:
     void vider();
     //
     Piece(int);
+    ~Piece();
 };
 
 

@@ -4,8 +4,7 @@
 
 #include "Magicien.h"
 using namespace std;
-Magicien::Magicien()
-{
+Magicien::Magicien() {
     this->PV = 70;
 }
 void Magicien::bouleDeFeu(Personnage* cible) const {

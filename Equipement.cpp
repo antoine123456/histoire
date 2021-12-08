@@ -5,5 +5,4 @@
 #include "Equipement.h"
 
 Equipement::Equipement(int i) {
-    this->type = i ;
 }

@@ -5,11 +5,9 @@
 #include "Guerrier.h"
 using namespace std;
 
-Guerrier::Guerrier()
-{
+Guerrier::Guerrier(){
     this-> PV = 100;
 }
-void Guerrier::charger(Personnage* cible) const
-{
+void Guerrier::charger(Personnage* cible) const{
     cible->recevoirDegats(10);
 }

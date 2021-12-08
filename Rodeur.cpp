@@ -4,8 +4,7 @@
 
 #include "Rodeur.h"
 using namespace std;
-Rodeur::Rodeur()
-{
+Rodeur::Rodeur() {
     this->PV=80;
 }
 void Rodeur::detrousser(Personnage* cible) const

@@ -8,9 +8,9 @@
 
 class Equipement {
 private:
-    int type;
-    int PA;
+
 public:
+    std::string type;
     Equipement(int i);
 };
 

@@ -97,4 +97,6 @@ std::vector<Phrase*> Phrase::seekInstruction() {
     }*/
     return instructions;
 }
+Phrase::~Phrase(){
 
+}

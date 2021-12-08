@@ -16,10 +16,13 @@ void Piece::creerActionList() {
     this->actionList = contenu->seekInstruction();
 }
 Phrase* Piece::nextAction(){
-    Phrase* info = this->actionList[this->compteur];
+    Phrase* info = this->actionList[this->compteur];//new Phrase("12");//
     this->compteur++;
     return info;
 }
 void Piece::vider(){
     this->compteur=0;
+}
+Piece::~Piece() {
+
 }

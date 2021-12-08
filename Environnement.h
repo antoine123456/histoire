@@ -12,15 +12,10 @@
 class Environnement {
 
 private:
-    std::map<int, std::string> typesArmes = {{1, "Epee",},
-                                   {2, "Dagues",},
-                                   {3, "Baton",}};
-    std::map<int, std::string> typesArmures = {{1, "Cuirasse",},
-                                     {2, "Cuir",},
-                                     {3, "Tissus",}};
-    std::map<std::string,int > typesPersonnage = {{"Guerrier",1,},
-                                     {"Rodeur",2, },
-                                     {"Mage",3, }};
+    // TODO sort de ca
+    std::map<int,std::string> typesPersonnage = {{1,"Guerrier",},
+                                                 {2,"Rodeur", },
+                                                 {3,"Magicien", }};
     Personnage* personnage;
     std::string name;
     std::vector<Phrase*> contenu;
@@ -28,9 +23,7 @@ private:
     Phrase* phraseAct;
 public:
     void preparerPersonnage();
-    void reprPersonnage();
     void preparerPieces();
-    void actionCreator(Phrase *);
     Environnement(std::string name);
     int execAction();
     void jouer();
